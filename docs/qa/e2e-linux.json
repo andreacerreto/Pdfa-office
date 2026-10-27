@@ -1,0 +1,383 @@
+{
+  "observations": [
+    {
+      "input": "documento_ufficio.pdf",
+      "standard": "1b",
+      "exit_code": 0,
+      "seconds": 1.53,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1525,
+            "input_path": "<test-run>/fixtures/documento_ufficio.pdf",
+            "output_path": "<test-run>/converted/documento_ufficio_pdfa-1b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/documento_ufficio_pdfa-1b.ricevuta.json",
+            "report_path": "<test-run>/converted/documento_ufficio_pdfa-1b.verapdf.xml",
+            "standard": "1b",
+            "warnings": [
+              "PDF/A-1b può richiedere l'appiattimento delle trasparenze. Controlla la resa visiva del risultato.",
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "trasparenze.pdf",
+      "standard": "1b",
+      "exit_code": 0,
+      "seconds": 2.43,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 2426,
+            "input_path": "<test-run>/fixtures/trasparenze.pdf",
+            "output_path": "<test-run>/converted/trasparenze_pdfa-1b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/trasparenze_pdfa-1b.ricevuta.json",
+            "report_path": "<test-run>/converted/trasparenze_pdfa-1b.verapdf.xml",
+            "standard": "1b",
+            "warnings": [
+              "PDF/A-1b può richiedere l'appiattimento delle trasparenze. Controlla la resa visiva del risultato.",
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "scansione.pdf",
+      "standard": "1b",
+      "exit_code": 0,
+      "seconds": 1.29,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1285,
+            "input_path": "<test-run>/fixtures/scansione.pdf",
+            "output_path": "<test-run>/converted/scansione_pdfa-1b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/scansione_pdfa-1b.ricevuta.json",
+            "report_path": "<test-run>/converted/scansione_pdfa-1b.verapdf.xml",
+            "standard": "1b",
+            "warnings": [
+              "PDF/A-1b può richiedere l'appiattimento delle trasparenze. Controlla la resa visiva del risultato.",
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.4,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1399,
+            "input_path": "<test-run>/fixtures/documento_ufficio.pdf",
+            "output_path": "<test-run>/converted/documento_ufficio_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/documento_ufficio_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/converted/documento_ufficio_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "trasparenze.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.4,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1400,
+            "input_path": "<test-run>/fixtures/trasparenze.pdf",
+            "output_path": "<test-run>/converted/trasparenze_pdfa-2b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/trasparenze_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/converted/trasparenze_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "scansione.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.23,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1222,
+            "input_path": "<test-run>/fixtures/scansione.pdf",
+            "output_path": "<test-run>/converted/scansione_pdfa-2b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/scansione_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/converted/scansione_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "standard": "3b",
+      "exit_code": 0,
+      "seconds": 1.34,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1340,
+            "input_path": "<test-run>/fixtures/documento_ufficio.pdf",
+            "output_path": "<test-run>/converted/documento_ufficio_pdfa-3b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/documento_ufficio_pdfa-3b.ricevuta.json",
+            "report_path": "<test-run>/converted/documento_ufficio_pdfa-3b.verapdf.xml",
+            "standard": "3b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "trasparenze.pdf",
+      "standard": "3b",
+      "exit_code": 0,
+      "seconds": 1.4,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1398,
+            "input_path": "<test-run>/fixtures/trasparenze.pdf",
+            "output_path": "<test-run>/converted/trasparenze_pdfa-3b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/trasparenze_pdfa-3b.ricevuta.json",
+            "report_path": "<test-run>/converted/trasparenze_pdfa-3b.verapdf.xml",
+            "standard": "3b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "scansione.pdf",
+      "standard": "3b",
+      "exit_code": 0,
+      "seconds": 1.35,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1345,
+            "input_path": "<test-run>/fixtures/scansione.pdf",
+            "output_path": "<test-run>/converted/scansione_pdfa-3b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>/converted/scansione_pdfa-3b.ricevuta.json",
+            "report_path": "<test-run>/converted/scansione_pdfa-3b.verapdf.xml",
+            "standard": "3b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "pagina_ruotata.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.58,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1580,
+            "input_path": "<test-run>/fixtures/pagina_ruotata.pdf",
+            "output_path": "<test-run>/converted/pagina_ruotata_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/pagina_ruotata_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/converted/pagina_ruotata_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "società à & (bilancio) 100%.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.53,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1523,
+            "input_path": "<test-run>/fixtures/società à & (bilancio) 100%.pdf",
+            "output_path": "<test-run>/converted/società à & (bilancio) 100%_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/società à & (bilancio) 100%_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/converted/società à & (bilancio) 100%_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.52,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1519,
+            "input_path": "<test-run>/fixtures/documento_ufficio.pdf",
+            "output_path": "<test-run>/converted/documento_ufficio_pdfa-2b_1.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/converted/documento_ufficio_pdfa-2b_1.ricevuta.json",
+            "report_path": "<test-run>/converted/documento_ufficio_pdfa-2b_1.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    },
+    {
+      "input": "protetto.pdf",
+      "standard": "2b",
+      "exit_code": 1,
+      "seconds": 0.01,
+      "result": [
+        {
+          "error": "Dettagli salvati in <test-run>/rejections/protetto/protetto_pdfa-2b_errore.log: Il documento è cifrato. Fornisci una copia PDF sbloccata prima di convertirlo.",
+          "input_path": "<test-run>/fixtures/protetto.pdf",
+          "status": "errore"
+        }
+      ]
+    },
+    {
+      "input": "con_allegato.pdf",
+      "standard": "2b",
+      "exit_code": 1,
+      "seconds": 0.01,
+      "result": [
+        {
+          "error": "Dettagli salvati in <test-run>/rejections/con_allegato/con_allegato_pdfa-2b_errore.log: Il PDF contiene allegati incorporati o un portfolio. Questa versione non ne garantisce la conservazione: estrai gli allegati e converti una copia priva di allegati.",
+          "input_path": "<test-run>/fixtures/con_allegato.pdf",
+          "status": "errore"
+        }
+      ]
+    },
+    {
+      "input": "campo_firma_popolato.pdf",
+      "standard": "2b",
+      "exit_code": 1,
+      "seconds": 0.01,
+      "result": [
+        {
+          "error": "Dettagli salvati in <test-run>/rejections/campo_firma_popolato/campo_firma_popolato_pdfa-2b_errore.log: Il PDF contiene una firma digitale o una marca temporale. La conversione crea una copia priva della validità della firma originale. Abilita esplicitamente la conversione di una copia firmata per continuare.",
+          "input_path": "<test-run>/fixtures/campo_firma_popolato.pdf",
+          "status": "errore"
+        }
+      ]
+    },
+    {
+      "input": "non_valido.pdf",
+      "standard": "2b",
+      "exit_code": 1,
+      "seconds": 0.0,
+      "result": [
+        {
+          "error": "Dettagli salvati in <test-run>/rejections/non_valido/non_valido_pdfa-2b_errore.log: Il PDF non è leggibile oppure è protetto. Usa una copia PDF non cifrata.: failed parsing cross reference table: invalid start value",
+          "input_path": "<test-run>/fixtures/non_valido.pdf",
+          "status": "errore"
+        }
+      ]
+    },
+    {
+      "input": "campo_firma_popolato.pdf",
+      "standard": "2b",
+      "exit_code": 0,
+      "seconds": 1.59,
+      "result": [
+        {
+          "result": {
+            "elapsed_ms": 1583,
+            "input_path": "<test-run>/fixtures/campo_firma_popolato.pdf",
+            "output_path": "<test-run>/signed-copy/campo_firma_popolato_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>/signed-copy/campo_firma_popolato_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>/signed-copy/campo_firma_popolato_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Il documento di origine contiene una firma: il risultato è una nuova copia e non conserva la validità della firma originale.",
+              "Il documento contiene campi di modulo. La conversione può appiattirli: verifica che i valori siano visibili nel risultato.",
+              "Ghostscript segnala una sostituzione di font: confronta l'aspetto con l'originale."
+            ]
+          },
+          "status": "conforme"
+        }
+      ]
+    }
+  ],
+  "originals_unchanged": true,
+  "successful_conversions": 13,
+  "expected_rejections": 4,
+  "test_environment": {
+    "platform": "Linux x86_64",
+    "ghostscript": "10.02.1",
+    "verapdf": "1.30.3",
+    "test_date": "2026-10-27",
+    "fixture_revision": "Actual semi-transparent overlap: setFillColor before setFillAlpha(0.45)",
+    "temporary_cleanup_verified": true
+  },
+  "text_extraction_observation": {
+    "engine": "Ghostscript 10.02.1 (Linux test runtime; Windows bundle uses 10.08.0)",
+    "fixture": "documento_ufficio.pdf",
+    "finding": "The converted PDF text extraction maps accented characters and euro to control characters U+0001–U+0007 in this embedded-font fixture. PDF/A-b validation does not test Unicode extraction fidelity.",
+    "tested_options_without_fix": [
+      "PreserveMarkedContent=true",
+      "ToUnicodeForStdEnc=true",
+      "IgnoreToUnicode=false"
+    ],
+    "production_flags_changed": false,
+    "documentation": "https://ghostscript.readthedocs.io/en/latest/VectorDevices.html"
+  }
+}

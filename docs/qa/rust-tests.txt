@@ -1,0 +1,37 @@
+   Compiling pdfa-office v0.1.0 (<project>)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.15s
+     Running unittests src/lib.rs (target/debug/deps/pdfa_office-f454ccd61ac01a7a)
+
+running 6 tests
+test engine::unit_tests::windows_runtime_paths_remove_verbatim_prefixes ... ok
+test engine::unit_tests::reservations_avoid_all_existing_outputs_and_concurrent_jobs ... ok
+test engine::unit_tests::postscript_path_cannot_escape_literal ... ok
+test engine::unit_tests::publishing_never_replaces_an_existing_document ... ok
+test engine::unit_tests::cancelled_process_is_reaped_and_its_directory_is_cleaned ... ok
+test engine::unit_tests::timed_out_process_is_reaped_and_its_directory_is_cleaned ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running unittests src/bin/pdfa-office-cli.rs (target/debug/deps/pdfa_office_cli-6b22342b8b13a658)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/engine_safety.rs (target/debug/deps/engine_safety-d0877a967270240c)
+
+running 5 tests
+test rejects_xml_external_entities ... ok
+test rejects_wrong_profile_and_noncompliance ... ok
+test accepts_complete_matching_report ... ok
+test rejects_missing_truncated_and_duplicate_jobs ... ok
+test rejects_exceptions_and_inconsistent_counters ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pdfa_office
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

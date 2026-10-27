@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-10-27",
+  "ghostscript": {
+    "version": "10.08.0",
+    "filename": "gs10080w64.exe",
+    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/gs10080w64.exe",
+    "sha256": "52a91b8bf09298788d7a57b9206127026c23eacd75405f0a131e26dc381dce50",
+    "upstream_checksums": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/SHA512SUMS",
+    "source": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/tag/gs10080"
+  },
+  "verapdf": {
+    "version": "1.30.3",
+    "filename": "verapdf-greenfield-1.30.3-installer.zip",
+    "url": "https://software.verapdf.org/rel/1.30/verapdf-greenfield-1.30.3-installer.zip",
+    "sha256": "b512bf24945503a33fc10738ecffc1f2dccaaf8593a448e94ee9ac86a9559a59",
+    "signature": "https://software.verapdf.org/rel/1.30/verapdf-greenfield-1.30.3-installer.zip.asc",
+    "signing_key_fingerprint": "13DD102B4DD69354D12DE5A83184863278B17FE7",
+    "source": "https://github.com/veraPDF/veraPDF-apps/tree/v1.30.3"
+  },
+  "java": {
+    "version": "21.0.12.1+1",
+    "filename": "OpenJDK21U-jre_x64_windows_hotspot_21.0.12.1_1.zip",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_x64_windows_hotspot_21.0.12.1_1.zip",
+    "sha256": "d35f31e712f0fcf6ac5a093edc90204fbff22f720ba3950bd09d331d5e621636",
+    "upstream_checksums": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_x64_windows_hotspot_21.0.12.1_1.zip.sha256.txt",
+    "source": "https://github.com/adoptium/temurin21-binaries/releases/tag/jdk-21.0.12.1%2B1"
+  }
+}

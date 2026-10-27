@@ -1,0 +1,235 @@
+{
+  "environment": "Wine11 emulation; Windows x64 binaries; GS10.08.0; veraPDF1.30.3; Temurin21.0.12.1+1",
+  "observations": [
+    {
+      "input": "documento_ufficio.pdf",
+      "flavour": "1b",
+      "exit": 0,
+      "seconds": 6.0,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 5919,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\documento_ufficio.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-1b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-1b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-1b.verapdf.xml",
+            "standard": "1b",
+            "warnings": [
+              "PDF/A-1b può richiedere l'appiattimento delle trasparenze. Controlla la resa visiva del risultato.",
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Documento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 1 di 2\nDocumento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 2 di 2",
+      "local_output": "<test-run>/archivio à & (100%)/documento_ufficio_pdfa-1b.pdf"
+    },
+    {
+      "input": "trasparenze.pdf",
+      "flavour": "1b",
+      "exit": 0,
+      "seconds": 19.65,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 19562,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\trasparenze.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-1b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-1b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-1b.verapdf.xml",
+            "standard": "1b",
+            "warnings": [
+              "PDF/A-1b può richiedere l'appiattimento delle trasparenze. Controlla la resa visiva del risultato.",
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "",
+      "local_output": "<test-run>/archivio à & (100%)/trasparenze_pdfa-1b.pdf"
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "flavour": "2b",
+      "exit": 0,
+      "seconds": 4.74,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4701,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\documento_ufficio.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Documento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 1 di 2\nDocumento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 2 di 2",
+      "local_output": "<test-run>/archivio à & (100%)/documento_ufficio_pdfa-2b.pdf"
+    },
+    {
+      "input": "trasparenze.pdf",
+      "flavour": "2b",
+      "exit": 0,
+      "seconds": 4.78,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4711,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\trasparenze.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-2b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Trasparenze e grafica vettoriale\nVerificare i colori della sovrapposizione.",
+      "local_output": "<test-run>/archivio à & (100%)/trasparenze_pdfa-2b.pdf"
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "flavour": "3b",
+      "exit": 0,
+      "seconds": 4.68,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4642,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\documento_ufficio.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-3b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-3b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-3b.verapdf.xml",
+            "standard": "3b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Documento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 1 di 2\nDocumento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 2 di 2",
+      "local_output": "<test-run>/archivio à & (100%)/documento_ufficio_pdfa-3b.pdf"
+    },
+    {
+      "input": "trasparenze.pdf",
+      "flavour": "3b",
+      "exit": 0,
+      "seconds": 4.73,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4692,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\trasparenze.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-3b.pdf",
+            "page_count": 1,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-3b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\trasparenze_pdfa-3b.verapdf.xml",
+            "standard": "3b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Trasparenze e grafica vettoriale\nVerificare i colori della sovrapposizione.",
+      "local_output": "<test-run>/archivio à & (100%)/trasparenze_pdfa-3b.pdf"
+    },
+    {
+      "input": "società à & (bilancio) 100%.pdf",
+      "flavour": "2b",
+      "exit": 0,
+      "seconds": 4.88,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4841,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\società à & (bilancio) 100%.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\società à & (bilancio) 100%_pdfa-2b.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\società à & (bilancio) 100%_pdfa-2b.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\società à & (bilancio) 100%_pdfa-2b.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Documento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 1 di 2\nDocumento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 2 di 2",
+      "local_output": "<test-run>/archivio à & (100%)/società à & (bilancio) 100%_pdfa-2b.pdf"
+    },
+    {
+      "input": "documento_ufficio.pdf",
+      "flavour": "2b",
+      "exit": 0,
+      "seconds": 4.58,
+      "response": [
+        {
+          "result": {
+            "elapsed_ms": 4519,
+            "input_path": "<test-run>\\pratiche società à & (2026)\\documento_ufficio.pdf",
+            "output_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b_1.pdf",
+            "page_count": 2,
+            "receipt_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b_1.ricevuta.json",
+            "report_path": "<test-run>\\archivio à & (100%)\\documento_ufficio_pdfa-2b_1.verapdf.xml",
+            "standard": "2b",
+            "warnings": [
+              "Ghostscript ha emesso avvisi sul documento; i dettagli sono riportati nella ricevuta."
+            ]
+          },
+          "status": "conforme"
+        }
+      ],
+      "text_extract": "Documento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 1 di 2\nDocumento di ufficio\nCollaudo sintetico | nessun dato personale\nOggetto: verifica conversione e archiviazione.\nCaratteri: à è é ì ò ù - euro € - società - più.\nImporti: 1.234,56 €; 987,65 €; totale 2.222,21 €.\nQuesta riga deve restare leggibile e selezionabile.\nConsulenza 1.234,56 €\nServizi 987,65 €\nTotale 2.222,21 €\nSolo materiale di test - PDF/A Office Pagina 2 di 2",
+      "local_output": "<test-run>/archivio à & (100%)/documento_ufficio_pdfa-2b_1.pdf"
+    },
+    {
+      "input": "protetto.pdf",
+      "flavour": "2b",
+      "exit": 1,
+      "seconds": 0.03,
+      "response": [
+        {
+          "error": "Il documento è cifrato. Fornisci una copia PDF sbloccata prima di convertirlo.\nDettagli salvati in <test-run>\\archivio à & (100%)\\protetto_pdfa-2b_errore.log",
+          "input_path": "<test-run>\\pratiche società à & (2026)\\protetto.pdf",
+          "status": "errore"
+        }
+      ]
+    },
+    {
+      "input": "con_allegato.pdf",
+      "flavour": "3b",
+      "exit": 1,
+      "seconds": 0.03,
+      "response": [
+        {
+          "error": "Il PDF contiene allegati incorporati o un portfolio. Questa versione non ne garantisce la conservazione: estrai gli allegati e converti una copia priva di allegati.\nDettagli salvati in <test-run>\\archivio à & (100%)\\con_allegato_pdfa-3b_errore.log",
+          "input_path": "<test-run>\\pratiche società à & (2026)\\con_allegato.pdf",
+          "status": "errore"
+        }
+      ]
+    }
+  ],
+  "originals_unchanged": true,
+  "tempfiles_cleaned": true
+}

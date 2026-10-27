@@ -1,0 +1,72 @@
+{
+  "engine": "Ghostscript 10.02.1",
+  "renderer": "PyMuPDF / MuPDF",
+  "dpi": 108,
+  "pages": "first page of three synthetic fixture documents, each in three profiles",
+  "caution": "Pixel comparison is fixture-specific, not a general guarantee. Accented-character ToUnicode mapping differs in this Linux Ghostscript version; see e2e-linux.json.",
+  "checks": [
+    {
+      "document": "documento_ufficio",
+      "standard": "1b",
+      "mean_absolute_pixel_difference_0_255": 0.2066,
+      "same_dimensions": true,
+      "output_text_characters": 742
+    },
+    {
+      "document": "documento_ufficio",
+      "standard": "2b",
+      "mean_absolute_pixel_difference_0_255": 0.2066,
+      "same_dimensions": true,
+      "output_text_characters": 742
+    },
+    {
+      "document": "documento_ufficio",
+      "standard": "3b",
+      "mean_absolute_pixel_difference_0_255": 0.2066,
+      "same_dimensions": true,
+      "output_text_characters": 742
+    },
+    {
+      "document": "trasparenze",
+      "standard": "1b",
+      "mean_absolute_pixel_difference_0_255": 0.5347,
+      "same_dimensions": true,
+      "output_text_characters": 0
+    },
+    {
+      "document": "trasparenze",
+      "standard": "2b",
+      "mean_absolute_pixel_difference_0_255": 0.043,
+      "same_dimensions": true,
+      "output_text_characters": 76
+    },
+    {
+      "document": "trasparenze",
+      "standard": "3b",
+      "mean_absolute_pixel_difference_0_255": 0.043,
+      "same_dimensions": true,
+      "output_text_characters": 76
+    },
+    {
+      "document": "scansione",
+      "standard": "1b",
+      "mean_absolute_pixel_difference_0_255": 0.0,
+      "same_dimensions": true,
+      "output_text_characters": 0
+    },
+    {
+      "document": "scansione",
+      "standard": "2b",
+      "mean_absolute_pixel_difference_0_255": 0.0,
+      "same_dimensions": true,
+      "output_text_characters": 0
+    },
+    {
+      "document": "scansione",
+      "standard": "3b",
+      "mean_absolute_pixel_difference_0_255": 0.0,
+      "same_dimensions": true,
+      "output_text_characters": 0
+    }
+  ]
+}

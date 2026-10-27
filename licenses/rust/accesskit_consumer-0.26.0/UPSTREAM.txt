@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/AccessKit/accesskit/405d578cdfd8496ee79020d24cfaac8c29a8a48f/LICENSE-MIT
+https://raw.githubusercontent.com/AccessKit/accesskit/405d578cdfd8496ee79020d24cfaac8c29a8a48f/LICENSE-APACHE

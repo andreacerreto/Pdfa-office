@@ -1,0 +1,26 @@
+name: Build Windows installer
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install NSIS and 7-Zip
+        shell: pwsh
+        run: choco install nsis 7zip --yes --no-progress
+      - name: Build, test and package
+        shell: pwsh
+        run: ./scripts/build-windows.ps1
+      - name: Upload installer and portable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF-A-Office-Windows-x64
+          path: dist/*
+          if-no-files-found: error
