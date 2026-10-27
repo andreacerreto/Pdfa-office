@@ -1,0 +1,9 @@
+/target/
+/build/
+/dist/
+/resources/*
+!/resources/README.md
+/.build/
+/test-output/
+*.log
+
