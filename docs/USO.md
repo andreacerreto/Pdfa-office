@@ -4,7 +4,7 @@
 
 PDF/A Office è destinato a Windows 10/11 a 64 bit. L'installer completo include tutti i motori e il runtime Java; non servono installazioni separate di Ghostscript o veraPDF.
 
-Avvia `PDF-A-Office-0.1.0-Windows-x64-Setup.exe`, leggi la licenza e segui la procedura. La destinazione iniziale è `%LOCALAPPDATA%\Programs\PDF-A Office`. L'installazione riguarda il tuo utente e aggiunge un collegamento nel menu Start. Se scegli una cartella diversa, usa una cartella vuota dedicata all'applicazione.
+Avvia `PDF-A-Office-0.1.1-Windows-x64-Setup.exe`, leggi la licenza e segui la procedura. La destinazione iniziale è `%LOCALAPPDATA%\Programs\PDF-A Office`. L'installazione riguarda il tuo utente e aggiunge un collegamento nel menu Start. Se scegli una cartella diversa, usa una cartella vuota dedicata all'applicazione.
 
 Il pacchetto non è firmato con Authenticode: l'autore potrebbe essere indicato come non verificato. Se le regole dell'ufficio impediscono l'avvio, fai verificare il pacchetto dal responsabile IT. Gli hash dei file distribuiti sono in `SHA256SUMS.txt`; da PowerShell puoi calcolare quello dell'installer con:
 
@@ -24,6 +24,8 @@ Per disinstallare usa la voce PDF/A Office nelle applicazioni di Windows oppure 
 4. Premi **Converti e verifica**. I file vengono elaborati in sequenza e la finestra rimane utilizzabile.
 5. Attendi l'esito di ogni documento. **Conforme** compare soltanto dopo la validazione veraPDF sul profilo selezionato.
 6. Premi **Apri PDF** e confronta la copia con l'originale. Espandi **Risultato e rapporto** per vedere gli avvisi e aprire il rapporto XML o la ricevuta JSON.
+
+Se hai aggiunto PDF ma manca la destinazione, compare un avviso e il pulsante principale mostra **Scegli destinazione...**. Premilo per scegliere la cartella; poi il pulsante diventa **Converti e verifica**. Se la cartella ricordata non è più disponibile, viene richiesto di sceglierne un'altra.
 
 Durante l'elaborazione non è possibile cambiare i file o le opzioni del lotto. **Interrompi** annulla il lavoro in corso: i risultati già completati restano salvati e i file rimanenti possono essere ripresi. Anche la chiusura della finestra richiede prima l'interruzione del worker.
 

@@ -7,7 +7,7 @@ Unicode true
 !include "WinVer.nsh"
 
 !ifndef APP_VERSION
-  !define APP_VERSION "0.1.0"
+  !define APP_VERSION "0.1.1"
 !endif
 !ifndef PACKAGE_DIR
   !define PACKAGE_DIR "..\build\package"
@@ -21,7 +21,7 @@ Unicode true
 !include "${UNINSTALL_INCLUDE}"
 
 Name "PDF/A Office"
-OutFile "${OUTPUT_DIR}/PDF-A-Office-${APP_VERSION}-Windows-x64-Setup.exe"
+OutFile "${OUTPUT_DIR}\PDF-A-Office-${APP_VERSION}-Windows-x64-Setup.exe"
 InstallDir "$LOCALAPPDATA\Programs\PDF-A Office"
 InstallDirRegKey HKCU "Software\PDF-A Office" "InstallDir"
 RequestExecutionLevel user
@@ -38,13 +38,13 @@ VIAddVersionKey /LANG=1040 "FileVersion" "${APP_VERSION}"
 VIAddVersionKey /LANG=1040 "ProductVersion" "${APP_VERSION}"
 VIAddVersionKey /LANG=1040 "LegalCopyright" "PDF/A Office contributors - AGPL-3.0-or-later"
 
-!define MUI_ICON "${PACKAGE_DIR}/icon.ico"
-!define MUI_UNICON "${PACKAGE_DIR}/icon.ico"
+!define MUI_ICON "${PACKAGE_DIR}\icon.ico"
+!define MUI_UNICON "${PACKAGE_DIR}\icon.ico"
 !define MUI_ABORTWARNING
 !define MUI_WELCOMEPAGE_TITLE "Benvenuto in PDF/A Office"
 !define MUI_WELCOMEPAGE_TEXT "Converti PDF in PDF/A-1b, PDF/A-2b e PDF/A-3b e verifica i risultati con veraPDF.$\r$\n$\r$\nTutti i componenti sono inclusi. Dopo l'installazione non serve una connessione Internet.$\r$\n$\r$\nL'applicazione verrà installata per il tuo utente."
 !insertmacro MUI_PAGE_WELCOME
-!insertmacro MUI_PAGE_LICENSE "${PACKAGE_DIR}/LICENSE"
+!insertmacro MUI_PAGE_LICENSE "${PACKAGE_DIR}\LICENSE"
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 !define MUI_FINISHPAGE_RUN "$INSTDIR\pdfa-office.exe"
@@ -75,7 +75,7 @@ Section "PDF/A Office" MainSection
   Abort
   install_ok:
   SetOutPath "$INSTDIR"
-  File /r "${PACKAGE_DIR}/*"
+  File /r "${PACKAGE_DIR}\*"
   WriteUninstaller "$INSTDIR\Disinstalla.exe"
   WriteRegStr HKCU "Software\PDF-A Office" "InstallDir" "$INSTDIR"
   CreateDirectory "$SMPROGRAMS\PDF-A Office"

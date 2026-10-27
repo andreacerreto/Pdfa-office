@@ -20,11 +20,14 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Test Rust non riusciti.' }
     cargo build --locked --release
     if ($LASTEXITCODE -ne 0) { throw 'Compilazione Rust non riuscita.' }
+    $metadataJson = cargo metadata --locked --no-deps --format-version 1
+    if ($LASTEXITCODE -ne 0) { throw 'Impossibile individuare la cartella di compilazione Cargo.' }
+    $targetDirectory = ($metadataJson | ConvertFrom-Json).target_directory
     if (-not $SkipDependencies) {
         & (Join-Path $PSScriptRoot 'prepare-dependencies.ps1') -PackageDirectory $package -SevenZip $SevenZip
     }
     foreach ($binary in @('pdfa-office.exe','pdfa-office-cli.exe')) {
-        Copy-Item -LiteralPath (Join-Path $project "target\release\$binary") -Destination $package -Force
+        Copy-Item -LiteralPath (Join-Path $targetDirectory "release\$binary") -Destination $package -Force
     }
     foreach ($name in @('README.md','LICENSE','THIRD-PARTY-NOTICES.md','TESTING.md')) {
         if (Test-Path (Join-Path $project $name)) { Copy-Item -LiteralPath (Join-Path $project $name) -Destination $package -Force }
@@ -82,7 +85,7 @@ try {
         elseif (Test-Path 'C:\Program Files (x86)\NSIS\makensis.exe') { $MakeNsis = 'C:\Program Files (x86)\NSIS\makensis.exe' }
         else { throw 'Installare NSIS 3 oppure specificare -MakeNsis.' }
     }
-    & $MakeNsis "/DAPP_VERSION=$version" "/DPACKAGE_DIR=$package" "/DOUTPUT_DIR=$dist" "/DUNINSTALL_INCLUDE=$manifest" (Join-Path $project 'installer\pdfa-office.nsi')
+    & $MakeNsis /V2 /INPUTCHARSET UTF8 "/DAPP_VERSION=$version" "/DPACKAGE_DIR=$package" "/DOUTPUT_DIR=$dist" "/DUNINSTALL_INCLUDE=$manifest" (Join-Path $project 'installer\pdfa-office.nsi')
     if ($LASTEXITCODE -ne 0) { throw 'Creazione installer NSIS non riuscita.' }
     $portable = Join-Path $dist "PDF-A-Office-$version-Windows-x64-portable.zip"
     Compress-Archive -Path (Join-Path $package '*') -DestinationPath $portable -Force

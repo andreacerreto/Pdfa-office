@@ -4,9 +4,11 @@ Convertitore desktop per Windows 10 e Windows 11 a 64 bit. Converte uno o più P
 
 L'interfaccia e il coordinamento delle operazioni sono scritti in **Rust**. La conversione utilizza **Ghostscript** e la validazione utilizza **veraPDF**, eseguiti localmente. Non è un motore di conversione PDF scritto interamente in Rust.
 
+Scarica l'installer completo o il pacchetto portabile dalla [pagina delle release](https://github.com/andreacerreto/Pdfa-office/releases/latest).
+
 ## Utilizzo
 
-1. Esegui `PDF-A-Office-0.1.0-Windows-x64-Setup.exe` del pacchetto distribuito. L'installazione è per l'utente corrente e non richiede privilegi amministrativi.
+1. Esegui `PDF-A-Office-0.1.1-Windows-x64-Setup.exe` del pacchetto distribuito. L'installazione è per l'utente corrente e non richiede privilegi amministrativi.
 2. Apri **PDF/A Office** dal menu Start.
 3. Aggiungi i PDF, oppure trascinali nella finestra.
 4. Scegli il formato richiesto dal destinatario e la cartella in cui salvare i risultati.

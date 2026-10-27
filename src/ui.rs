@@ -23,6 +23,7 @@ const LINE: Color32 = Color32::from_rgb(223, 230, 239);
 const MUTED: Color32 = Color32::from_rgb(91, 107, 128);
 const GREEN: Color32 = Color32::from_rgb(22, 117, 83);
 const RED: Color32 = Color32::from_rgb(167, 46, 52);
+const AMBER: Color32 = Color32::from_rgb(140, 85, 10);
 const SETTINGS_KEY: &str = "pdfa-office-settings-v1";
 
 #[derive(Default, Serialize, Deserialize)]
@@ -377,6 +378,16 @@ impl PdfaApp {
                 ui.add_space(7.0);
             }
             let remaining = self.queue.iter().filter(|item| item.status.can_run()).count();
+            let output_ready = self.settings.output_dir.is_dir();
+            if !self.running && remaining > 0 && !output_ready {
+                let message = if self.settings.output_dir.as_os_str().is_empty() {
+                    "Per avviare la conversione, scegli la cartella di destinazione."
+                } else {
+                    "La cartella di destinazione non è più disponibile. Scegli un'altra cartella."
+                };
+                ui.label(RichText::new(message).strong().color(AMBER));
+                ui.add_space(7.0);
+            }
             ui.horizontal(|ui| {
                 ui.label(RichText::new(if self.running { "Conversione e verifica in corso".to_owned() } else { format!("{remaining} file da elaborare") }).strong().color(NAVY));
                 ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
@@ -386,9 +397,15 @@ impl PdfaApp {
                             self.cancel.store(true, Ordering::Relaxed);
                         }
                     } else {
-                        let ready = remaining > 0 && self.engines.is_ok() && self.settings.output_dir.is_dir();
-                        if ui.add_enabled(ready, egui::Button::new(RichText::new("Converti e verifica").color(Color32::WHITE).strong()).fill(BLUE).min_size(Vec2::new(190.0, 42.0))).clicked() {
-                            self.start_batch(ctx);
+                        let needs_destination = remaining > 0 && !output_ready;
+                        let ready = remaining > 0 && self.engines.is_ok() && output_ready;
+                        let label = if needs_destination { "Scegli destinazione..." } else { "Converti e verifica" };
+                        if ui.add_enabled(needs_destination || ready, egui::Button::new(RichText::new(label).color(Color32::WHITE).strong()).fill(BLUE).min_size(Vec2::new(190.0, 42.0))).clicked() {
+                            if needs_destination {
+                                self.pick_output_dir();
+                            } else {
+                                self.start_batch(ctx);
+                            }
                         }
                     }
                     if ui.add_enabled(!self.settings.output_dir.as_os_str().is_empty(), egui::Button::new("Apri destinazione").min_size(Vec2::new(145.0, 42.0))).clicked() {
@@ -403,6 +420,7 @@ impl PdfaApp {
     }
 
     fn settings_card(&mut self, ui: &mut egui::Ui) {
+        let needs_destination = !self.settings.output_dir.is_dir();
         card().show(ui, |ui| {
             ui.horizontal(|ui| {
                 ui.vertical(|ui| {
@@ -429,8 +447,13 @@ impl PdfaApp {
                 ui.label(RichText::new("Salva in").strong().color(NAVY));
                 let dir = if self.settings.output_dir.as_os_str().is_empty() { "Scegli una cartella di destinazione".into() } else { self.settings.output_dir.display().to_string() };
                 ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
-                    if ui.add_enabled(!self.running, egui::Button::new("Scegli cartella...")).clicked() { self.pick_output_dir(); }
-                    ui.add(egui::Label::new(RichText::new(dir).size(13.0).color(MUTED)).truncate()).on_hover_text(self.settings.output_dir.display().to_string());
+                    let button = if needs_destination {
+                        egui::Button::new(RichText::new("Scegli cartella...").strong().color(Color32::WHITE)).fill(BLUE)
+                    } else {
+                        egui::Button::new("Scegli cartella...")
+                    };
+                    if ui.add_enabled(!self.running, button).clicked() { self.pick_output_dir(); }
+                    ui.add(egui::Label::new(RichText::new(dir).size(13.0).color(if needs_destination { AMBER } else { MUTED })).truncate()).on_hover_text(self.settings.output_dir.display().to_string());
                 });
             });
             ui.add_space(6.0);

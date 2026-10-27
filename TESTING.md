@@ -1,3 +1,28 @@
+# Verifiche della versione 0.1.1
+
+Data: 27 ottobre 2026. Aggiornamento dell'interfaccia e del confezionamento.
+
+- Compilazione release su Windows x64 con Rust 1.99.1, target
+  `x86_64-pc-windows-gnu` e GCC/MinGW-w64 WinLibs.
+- `cargo fmt --check` superato e **9 test Rust superati su Windows**:
+  4 test unitari e 5 test di integrazione. I due test riservati a Unix su
+  timeout e annullamento non sono eseguiti su Windows.
+- Verifica dell'interfaccia aggiornata nell'installazione Windows: aggiungendo
+  un PDF senza destinazione compaiono l'avviso e il pulsante attivo
+  **Scegli destinazione...**. Scelta la cartella, torna **Converti e verifica**.
+- Conversione di un PDF sintetico dalla GUI e dalla CLI, con i motori del
+  pacchetto: risultato PDF/A-2b conforme secondo veraPDF.
+- Il confezionamento individua la directory tramite Cargo, rispettando anche
+  `CARGO_TARGET_DIR` e le impostazioni locali di `build.target-dir`.
+- Lo script NSIS usa percorsi Windows nativi e viene letto come UTF-8 per
+  mantenere corretti i testi italiani dell'installer.
+
+Le prove riguardano un campione sintetico e non costituiscono un collaudo
+esaustivo di ogni documento o configurazione Windows. Il collaudo precedente
+dei profili e dei casi particolari resta documentato di seguito.
+
+---
+
 # Verifiche della versione 0.1.0
 
 Data: 27 ottobre 2026. Tutti i documenti usati sono sintetici e non contengono
